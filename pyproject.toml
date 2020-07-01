@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit_core >=2,<4", "rich", "click"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "zarr_utils"
+author = "Zarr Developers"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
+[tool.flit.entrypoints."console_scripts"]
+zarr2hdf = "zarr_utils:zarr2hdf"
+hdf2zarr = "zarr_utils:hdf2zarr"
